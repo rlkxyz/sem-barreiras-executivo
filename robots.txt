@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sembarreirasexecutivo.vercel.app/sitemap.xml
