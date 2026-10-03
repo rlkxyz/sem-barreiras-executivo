@@ -91,7 +91,7 @@ const upcoming = SHOWS.filter((s) => s.date >= iso(today));
 upcoming.forEach((s) => {
   const li = document.createElement('li');
   li.className = 'show reveal';
-  const msg = `Olá, Leandro! Vim pelo site e quero reservar ida e volta pro show ${s.name} (${s.label}/${s.mon}).`;
+  const msg = `Olá, Leandro! Vim pelo site e quero reservar ida e volta para o show ${s.name} (${s.label}/${s.mon}).`;
   li.innerHTML = `
     <div class="show-date"><strong${s.label.length > 2 ? ' class="long"' : ''}>${s.label}</strong><span>${s.mon}</span></div>
     <div class="show-info"><h3>${s.name}</h3><p>${s.place}</p></div>

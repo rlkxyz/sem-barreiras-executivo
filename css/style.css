@@ -113,8 +113,9 @@ button, input, select { font: inherit; }
   margin-top: 20px; font-size: clamp(42px, 6.4vw, 78px); font-weight: 800; max-width: 12ch;
 }
 .hero h1 span {
-  background: linear-gradient(100deg, var(--gold-soft), var(--gold) 55%, var(--gold-strong));
+  background: linear-gradient(100deg, #fff3d6 0%, #f6dca2 45%, #ecc67d 100%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 2px 16px rgba(236, 198, 125, .28));
 }
 .hero-sub { margin-top: 22px; max-width: 46ch; font-size: clamp(16px, 1.6vw, 19px); color: rgba(255, 255, 255, .82); }
 .hero-ctas { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 14px; }
@@ -288,6 +289,29 @@ button, input, select { font: inherit; }
 .values li { padding: 16px 20px; background: var(--white); border: 1px solid var(--ivory-2); border-radius: var(--radius); color: var(--ink-soft); font-size: 15px; }
 .values strong { display: block; color: var(--navy-900); font-size: 16px; }
 
+/* ===== Seguro ===== */
+.section-sand { background: var(--ivory-2); }
+.section-sand .section-sub { color: var(--ink-soft); }
+.insure { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+.insure-card { background: var(--navy-900); color: var(--white); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow); }
+.insure-ico { width: 52px; height: 52px; color: var(--gold); margin-bottom: 22px; }
+.insure-card h3 { font-size: 22px; font-weight: 800; }
+.insure-card p { margin-top: 10px; color: rgba(255, 255, 255, .75); }
+.insure-compare { background: var(--white); border: 1px solid #ddd2bf; border-radius: var(--radius-lg); padding: 32px; }
+.insure-compare h3 { font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-strong); margin-bottom: 8px; }
+.insure-compare dl { margin: 0; }
+.insure-compare dl div { padding: 16px 0; }
+.insure-compare dl div + div { border-top: 1px solid var(--ivory-2); }
+.insure-compare dt { font-weight: 800; color: var(--navy-900); font-size: 17px; }
+.insure-compare dd { margin: 4px 0 0; color: var(--ink-soft); font-size: 15px; }
+
+/* ===== Cadastur ===== */
+.cadastur { margin-top: 20px; display: flex; gap: 16px; align-items: center; padding: 18px 20px; border-radius: var(--radius); background: var(--navy-900); color: var(--white); }
+.cadastur-ico { width: 44px; height: 44px; flex-shrink: 0; color: var(--gold); }
+.about-text .cadastur strong { display: block; font-size: 16px; color: var(--white); }
+.cadastur span { font-size: 14px; color: rgba(255, 255, 255, .7); }
+.cadastur-num { color: var(--gold-soft) !important; font-weight: 700; white-space: nowrap; }
+
 /* ===== FAQ ===== */
 .faq-wrap { max-width: 860px; }
 .faq { display: grid; gap: 12px; }
@@ -349,6 +373,8 @@ button, input, select { font: inherit; }
   .service-feature img { width: 50%; aspect-ratio: auto; }
   .service-feature .service-body { flex: 1; justify-content: center; }
   .steps { grid-template-columns: 1fr 1fr; }
+  .insure { grid-template-columns: 1fr 1fr; }
+  .insure-compare { grid-column: span 2; }
 }
 
 @media (max-width: 880px) {
@@ -415,6 +441,9 @@ button, input, select { font: inherit; }
   .show .btn { grid-column: 1 / -1; width: 100%; }
 
   .steps { grid-template-columns: 1fr; gap: 12px; }
+  .insure { grid-template-columns: 1fr; }
+  .insure-compare { grid-column: auto; }
+  .insure-card, .insure-compare { padding: 24px; }
   .steps li { display: grid; grid-template-columns: 44px 1fr; column-gap: 16px; padding: 20px; }
   .steps li > span { grid-row: span 2; margin: 0; }
   .amenities { grid-template-columns: 1fr; }
