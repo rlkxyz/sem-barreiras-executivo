@@ -312,6 +312,16 @@ button, input, select { font: inherit; }
 .cadastur span { font-size: 14px; color: rgba(255, 255, 255, .7); }
 .cadastur-num { color: var(--gold-soft) !important; font-weight: 700; white-space: nowrap; }
 
+/* ===== Bandeiras ===== */
+.flags { display: inline-flex; gap: 5px; vertical-align: middle; }
+.flag { width: 21px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255, 255, 255, .25); flex-shrink: 0; }
+.flag-lg { width: 30px; height: 20px; border-radius: 3px; }
+.hero-chips .chip-lang { gap: 10px; }
+.lang-badge { margin-top: 12px; }
+.lang-badge .flags { flex-direction: column; gap: 6px; width: 44px; align-items: center; }
+.footer-col .flags { margin-left: 4px; }
+.footer-col p.plain { display: block; }
+
 /* ===== FAQ ===== */
 .faq-wrap { max-width: 860px; }
 .faq { display: grid; gap: 12px; }
