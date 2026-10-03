@@ -312,6 +312,47 @@ button, input, select { font: inherit; }
 .cadastur span { font-size: 14px; color: rgba(255, 255, 255, .7); }
 .cadastur-num { color: var(--gold-soft) !important; font-weight: 700; white-space: nowrap; }
 
+/* ===== Selos no topo ===== */
+.hero-creds { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; }
+.cred {
+  display: inline-flex; align-items: center; gap: 12px; padding: 10px 16px 10px 12px; border-radius: 14px;
+  background: rgba(212, 175, 106, .12); border: 1px solid rgba(212, 175, 106, .45);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); transition: background .2s, border-color .2s;
+}
+.cred:hover { background: rgba(212, 175, 106, .2); border-color: var(--gold); }
+.cred > span:last-child { display: flex; flex-direction: column; line-height: 1.25; font-size: 13px; color: rgba(255, 255, 255, .75); }
+.cred strong { color: var(--gold-soft); font-size: 15px; }
+.cred .flags { flex-direction: column; gap: 3px; }
+.cred-ico { width: 30px; height: 30px; color: var(--gold); flex-shrink: 0; }
+
+/* ===== Seção bilíngue + Cadastur ===== */
+.creds { position: relative; overflow: hidden; background: radial-gradient(ellipse at 80% 0%, rgba(212, 175, 106, .16), transparent 55%), var(--navy-950); }
+.creds-head h2 span { color: var(--gold); }
+.creds-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.cred-card {
+  position: relative; padding: clamp(28px, 3.4vw, 42px); border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, var(--navy-700), var(--navy-900) 70%);
+  border: 1px solid rgba(212, 175, 106, .45);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .8), inset 0 1px 0 rgba(255, 255, 255, .06);
+}
+.cred-card-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 26px; min-height: 64px; }
+.cred-card .flags { gap: 10px; }
+.cred-card .flag-xl { width: 66px; height: 44px; border-radius: 6px; box-shadow: 0 0 0 1px rgba(255, 255, 255, .25), 0 10px 24px -8px rgba(0, 0, 0, .6); }
+.cred-medal { width: 64px; height: 64px; color: var(--gold); }
+.cred-tag {
+  font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--navy-950);
+  background: var(--gold); padding: 6px 12px; border-radius: 999px; white-space: nowrap;
+}
+.cred-card h3 { font-size: clamp(24px, 2.6vw, 30px); font-weight: 800; }
+.cred-card p { margin-top: 12px; color: rgba(255, 255, 255, .75); font-size: 16.5px; }
+.cred-say { font-style: italic; color: var(--gold-soft) !important; font-weight: 600; }
+.cred-say i { white-space: nowrap; font-style: italic; }
+.cred-say span { color: rgba(255, 255, 255, .4); margin: 0 6px; font-style: normal; }
+.cred-num { font-size: 15px !important; }
+.cred-num strong { color: var(--gold-soft); letter-spacing: .02em; }
+.creds-cta { margin-top: 36px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.creds-cta span { color: rgba(255, 255, 255, .65); font-size: 15px; }
+
 /* ===== Bandeiras ===== */
 .flags { display: inline-flex; gap: 5px; vertical-align: middle; }
 .flag { width: 21px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255, 255, 255, .25); flex-shrink: 0; }
@@ -452,6 +493,15 @@ button, input, select { font: inherit; }
 
   .steps { grid-template-columns: 1fr; gap: 12px; }
   .insure { grid-template-columns: 1fr; }
+  .creds-grid { grid-template-columns: 1fr; }
+  .cred-say span { display: none; }
+  .cred-say i { display: block; }
+  .creds-cta .btn { width: 100%; }
+  .creds-cta { gap: 14px; justify-content: center; text-align: center; }
+  .hero-creds { margin-top: 22px; }
+  .cred { flex: 1 1 140px; }
+  .cred-card .flag-xl { width: 54px; height: 36px; }
+  .cred-medal { width: 54px; height: 54px; }
   .insure-compare { grid-column: auto; }
   .insure-card, .insure-compare { padding: 24px; }
   .steps li { display: grid; grid-template-columns: 44px 1fr; column-gap: 16px; padding: 20px; }
