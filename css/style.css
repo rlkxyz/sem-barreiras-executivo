@@ -346,6 +346,13 @@ button, input, select { font: inherit; }
 .cred-say span { color: rgba(255, 255, 255, .4); margin: 0 6px; font-style: normal; }
 .cred-num { font-size: 15px !important; }
 .cred-num strong { color: var(--gold-soft); letter-spacing: .02em; }
+.b2b-strip {
+  margin-top: 22px; display: flex; align-items: center; gap: 18px; padding: 20px 26px; border-radius: var(--radius-lg);
+  background: rgba(212, 175, 106, .1); border: 1px solid rgba(212, 175, 106, .45);
+}
+.b2b-ico { width: 40px; height: 40px; color: var(--gold); flex-shrink: 0; }
+.b2b-strip p { color: rgba(255, 255, 255, .8); font-size: 16.5px; }
+.b2b-strip strong { color: var(--gold-soft); font-size: 18px; margin-right: 10px; }
 .creds-cta { margin-top: 36px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
 .creds-cta span { color: rgba(255, 255, 255, .65); font-size: 15px; }
 
@@ -488,6 +495,8 @@ button, input, select { font: inherit; }
   .insure { grid-template-columns: 1fr; }
   .creds-grid { grid-template-columns: 1fr; }
   .cred-say span { display: none; }
+  .b2b-strip { padding: 18px 20px; gap: 14px; }
+  .b2b-strip strong { display: block; margin: 0 0 2px; }
   .cred-say i { display: block; }
   .creds-cta .btn { width: 100%; }
   .creds-cta { gap: 14px; justify-content: center; text-align: center; }
