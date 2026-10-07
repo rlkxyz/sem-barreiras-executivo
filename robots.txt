@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sembarreirasexecutivo.vercel.app/sitemap.xml
+Sitemap: https://sembarreirasexecutivo.com/sitemap.xml
